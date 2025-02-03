@@ -72,7 +72,7 @@
 #include <netlink/genl/ctrl.h>
 #include <linux/rtnetlink.h>
 #include <netinet/in.h>
-#include <cld80211_lib.h>
+#include "cld80211_lib.h"
 #include "wifiloggercmd.h"
 #include "wifilogger_event_defs.h"
 #include "wifilogger_diag.h"
@@ -2741,7 +2741,7 @@ wifi_error diag_message_handler(hal_info *info, nl_msg *msg)
     }
 
     if (!clh) {
-         ALOGE("Invalid data received from driver");
+//          ALOGE("Invalid data received from driver");
          return WIFI_ERROR_UNKNOWN;
     }
     /* Check nlmsg_type also to avoid processing unintended msgs */

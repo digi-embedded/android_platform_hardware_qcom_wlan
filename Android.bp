@@ -79,7 +79,6 @@ wifihal_qcom_defaults {
                     "//hardware/qcom/wlan/legacy:libwifi-hal-qcom",
                 ],
                 shared_libs: [
-                    "//hardware/qcom/wlan/legacy:libcld80211",
                     "libcrypto",
                 ],
             },

@@ -72,7 +72,7 @@
 #include <dirent.h>
 #include <net/if.h>
 #include <netinet/in.h>
-#include <cld80211_lib.h>
+#include "cld80211_lib.h"
 
 #include <sys/types.h>
 #include "list.h"

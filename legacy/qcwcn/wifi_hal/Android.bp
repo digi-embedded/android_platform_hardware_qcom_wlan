@@ -103,6 +103,7 @@ cc_library {
     ],
     local_include_dirs: ["."],
     srcs: [
+        "cld80211_lib.c",
         "common.cpp",
         "cpp_bindings.cpp",
         "gscan_event_handler.cpp",
@@ -127,7 +128,7 @@ cc_library {
         "wifilogger.cpp",
     ],
     shared_libs: [
-        "libcld80211",
+        "libcutils",
         "libnetutils",
         "liblog",
         "libnl",
